@@ -3,6 +3,8 @@
 `npm install`
 <br>
 `npm run start`
+<br>
+`npm run test`
 
 <hr>
 
