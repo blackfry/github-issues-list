@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  text-align: center;
+  min-width:  320px;
+  .app-header {
+    position: fixed;
+    background-color: #222;
+    height: 160px;
+    @media screen and (max-width: 720px) {
+      height: 160px;
+      text-align: center;
+    }
+    width: 100%;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    min-width: 320px;
+  }
+  .title-container {
+    width: 47%;
+    float: left;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      display: inline-block;
+    }
+    .app-title {
+      font-size: 2.0em;
+      @media screen and (max-width: 720px) {
+        margin: 3px;
+        font-size: 1.5em;
+      }
+    }
+    .list-title {
+      font-size: 1.5em;
+      @media screen and (max-width: 720px) {
+        margin: 1px;
+        font-size: 1em;
+      }
+    }
+  }
+  .options {
+    width: 47%;
+    float: right;
+    padding: 5px;
+    display: block;
+    @media screen and (max-width: 720px) {
+      width: 100%;
+      display: inline-block;
+    }
+    form {
+      display: block !important;
+    }
+    .form-filters {
+      display: inline-block;
+      padding: 5px;
+      text-align: left;
+      @media screen and (max-width: 720px) {
+        text-align: center;
+      }
+    }
+    .form-filters h2 {
+      display: inline-block;
+      font-size: 12px;
+      padding-right: 5px;
+      margin: 0px;
+      min-width: 150px;
+    }
+  }
+  .issues-list-container {
+    display: block;
+    position: relative;
+    top: 200px;
+    @media screen and (max-width: 720px) {
+      top: 200px;
+    }
+    z-index: 1;
+    .issue {
+      text-align: left;
+      display: inline-block;
+      box-shadow: 1px 2px 4px 0px #ececec87;
+      width: 90%;
+      height: 100%;
+      padding: 16px;
+      margin: 16px auto;
+      border-radius: 3px;
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .avatar {
+        
+        a, img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .date {
+        font-size: 12px;
+        font-weight: 300;
+        padding: 5px 0px;
+      }
+      .label-container {
+        padding: 10px 0px;
+        font-size: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+          box-shadow: -1px 1px 0px 0px lightgrey;
+          margin: 5px;
+          padding: 3px;
+        }
+        span:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .no-issues-screen {
+      height: 100vh;
+      width: 100%;
+      background: #b7e7fd;
+      h1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 60px;
+        font-weight: 100;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+      }
+    }
+    
+    .failed-loading-screen {
+      height: 100vh;
+      width: 100%;
+      background: #fdb7b7;
+      h1 {
+        position: absolute;
+        top: 30%;
+        left: 33%;
+        font-family: 'Amatic SC', cursive;
+        font-size: 60px;
+        font-weight: 100;
+      }
+      h2 {
+        position: absolute;
+        top: 60%;
+        left: 24%;
+        font-family: 'Amatic SC', cursive;
+        font-size: 30px;
+        font-weight: 100;
+      }
+    }
+  }
+  .loading-screen {
+    height: 100vh;
+    width: 100%;
+    background: #b7fddc;
+  }
+  .loading-screen h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    font-weight: 100;
+  }
+}

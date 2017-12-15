@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test suite for App FormsComponent snapshot 1`] = `
+<div
+  className="options"
+>
+  <form
+    className="form-filters"
+    onSubmit={[Function]}
+  >
+    <h2>
+      Enter repo name: 
+    </h2>
+    <input
+      defaultValue={undefined}
+      label="enter repo name: "
+      name="repoName"
+      onChange={[Function]}
+      type="text"
+    />
+  </form>
+  <form
+    className="form-filters"
+    onSubmit={[Function]}
+  >
+    <h2>
+      Filter issues by status: 
+    </h2>
+    <span>
+      Open
+    </span>
+    <input
+      checked={true}
+      className="issue-status-open"
+      disabled={false}
+      label="open"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span>
+      Closed
+    </span>
+    <input
+      checked={false}
+      className="issue-status-closed"
+      disabled={false}
+      label="closed"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </form>
+  <form
+    className="form-filters"
+    onSubmit={[Function]}
+  >
+    <h2>
+      Order date created: 
+    </h2>
+    <span>
+      Asc
+    </span>
+    <input
+      checked={true}
+      disabled={false}
+      label="ascending"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span>
+      Desc
+    </span>
+    <input
+      checked={false}
+      disabled={false}
+      label="descending"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </form>
+  <form
+    className="form-filters"
+  >
+    <h2>
+      Filter by tag: 
+    </h2>
+    <input
+      label="filter by tag: "
+      onChange={[Function]}
+      type="text"
+      value={undefined}
+    />
+  </form>
+</div>
+`;
+
+exports[`Test suite for App Issue snapshot 1`] = `
+<div
+  className="issue"
+>
+  <div
+    className="title"
+  >
+    <a
+      href={undefined}
+      target="_blank"
+    />
+  </div>
+  <div>
+    <div
+      className="date"
+    >
+      Opened on Invalid Date by Dan Abramov
+    </div>
+    <div
+      className="avatar"
+    >
+      <a
+        href={undefined}
+        target="_blank"
+      >
+        <img
+          alt="issue user profile"
+          src="sdf"
+        />
+      </a>
+    </div>
+    <div
+      className="label-container"
+    />
+  </div>
+</div>
+`;
+
+exports[`Test suite for App Label snapshot 1`] = `
+<span
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#undefined",
+    }
+  }
+/>
+`;
